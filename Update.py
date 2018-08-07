@@ -124,6 +124,16 @@ def blue():
     subMenu.configure(bg="#834bff",fg="#fff");
     fontMenu.configure(bg="#834bff",fg="#fff");
     themeMenu.configure(bg="#834bff",fg="#fff");
+def pp():
+    text.configure(bg="#607D8B",fg="#fff");
+    subMenu.configure(bg="#607D8B",fg="#fff");
+    fontMenu.configure(bg="#607D8B",fg="#fff");
+    themeMenu.configure(bg="#607D8B",fg="#fff");
+def red():
+    text.configure(bg="#C2185B",fg="#fff");
+    subMenu.configure(bg="#C2185B",fg="#fff");
+    fontMenu.configure(bg="#C2185B",fg="#fff");
+    themeMenu.configure(bg="#C2185B",fg="#fff");
 
 #End of Themes Function
 def saveas(event):
@@ -187,6 +197,8 @@ menu.add_cascade(label="Theme",menu=themeMenu);
 themeMenu.add_command(label="Dark",command=dark);
 themeMenu.add_command(label="Light",command=light);
 themeMenu.add_command(label="Blue",command=blue);
+themeMenu.add_command(label="Blue Grey",command=pp);
+themeMenu.add_command(label="Purple",command=red);
 #Help Section
 
 Help=Menu(menu,tearoff=0);
